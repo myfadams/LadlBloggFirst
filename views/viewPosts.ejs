@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+    <div class="container view">
+        <h1><%= postN.title %></h1>
+        <p>
+            <%= postN.message %>
+
+            <br><br>
+            by <%= postN.author  %>
+            <br><br>
+        </p>
+        
+        <a href="/remove?id=<%= postN.id %>" class="btn">Delete</a>
+        <a href="/edit?id=<%= postN.id %>" class="btn">Edit</a>
+        
+    </div>
+<%- include("partials/footer.ejs") %>

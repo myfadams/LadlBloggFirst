@@ -1,0 +1,27 @@
+<%-include("partials/header.ejs")  %>
+    <div class="container main">
+        <% if (allPosts.length>0){ %>
+            <%  for(let i=0;i<allPosts.length;i++){%>
+                <% allPosts[i]["id"]=i; %>
+                <a href="/viewpost?linkid=<%= i%>">
+                    <div class="post">
+                        <h2>
+
+                            <%= allPosts[i].title %>
+                        </h2>
+                        <p>
+                            <%= allPosts[i].preview %>....
+                            <br><br>
+                            by  <%= allPosts[i].author %>
+                        </p>
+                        
+                    </div>
+                </a>
+            <%  }%>
+        <% }else {%>
+            <h1>Create A New post</h1>
+        <% } %>
+        <a href="/create" class="btn">Create</a>
+    </div>
+
+<%-include("partials/footer.ejs")  %>

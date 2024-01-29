@@ -1,0 +1,11 @@
+<%-include("partials/header.ejs")  %>
+<div class="container">
+<h1>Edit Your Post</h1>
+<form method="post" action="/edit" class="create" >
+	<input name="Cname" type="text" class="feedback-input" value="<%= post.author  %>"/>
+	<input name="Ctitle" type="text" class="feedback-input" value="<%= post.title  %>"/>
+	<textarea name="Ctext" class="feedback-input" > <%= post.message  %></textarea>
+	<input type="submit" value="Update"class="btn" />
+</form>
+</div>
+<%- include("partials/footer.ejs") %>

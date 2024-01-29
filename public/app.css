@@ -1,0 +1,96 @@
+nav div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #474F7A;
+    color: white;
+}
+.container{
+    padding: 15px 30px;
+    text-align: center;
+}
+h2{
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    color: #1F2544;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #1F2544;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+a:hover{
+    opacity: 90%;
+    transform: scale(1.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create input,.create textarea{
+    font-size: 1.2rem;
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-color:#474F7A ;
+    border-width: 2px;
+    border-radius: 5px;
+
+    @media (max-width:560px) {
+        width: 75%;
+    }
+
+}
+textarea{
+    height: 300px;
+    resize: none;
+    @media (max-width:560px) {
+        height: 200px;
+    }
+}
+
+.create input[type="submit"]{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.post{
+    margin: 20px 0;
+    text-align: left;
+    background-color: #81689D;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+.post p{
+    font-size: 1rem;
+    font-style: italic;
+    padding: 5px;
+}
+
+nav a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.view p{
+    text-align: justify;
+}
+.view{
+    width: 75%;
+    margin: auto;
+    @media (min-width:561px) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
